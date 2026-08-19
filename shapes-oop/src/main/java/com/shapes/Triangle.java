@@ -6,7 +6,7 @@ public class Triangle extends Shape {
     public Triangle(double a, double b, double c) {
         super("Triangle");
 
-        if (isValid(a, b, c)) {
+        if (!isValid(a, b, c)) {
             throw new IllegalArgumentException("Invalid triangle side lengths.");
         }
         this.a = a;
