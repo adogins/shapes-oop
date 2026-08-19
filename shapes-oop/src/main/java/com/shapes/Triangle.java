@@ -1,5 +1,17 @@
 package com.shapes;
 
+/**
+ * Represents a triangle using three side lengths.
+ * 
+ * Area formula (Heron's formula):
+ *     s = (a + b + c) / 2
+ *     Area = sqrt(s * (s - a) * (s - b) * (s - c))
+ * 
+ * Perimeter formula: a + b + c
+ * 
+ * Valid triangle rule (triangle inequality):
+ *   a + b > c, a + c > b, b + c > a 
+ */
 public class Triangle extends Shape {
     private final double a, b, c;
 
@@ -26,6 +38,7 @@ public class Triangle extends Shape {
 
     @Override
     public double getPerimeter() {
+        // Perimeter = a + b + c
         return a + b + c;
     }
 

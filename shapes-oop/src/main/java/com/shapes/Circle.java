@@ -2,6 +2,9 @@ package com.shapes;
 
 /**
  * Represents a circle defined by it's radius.
+ * 
+ * Area formula: pi * r^2
+ * Perimeter (circumference): 2 * pi * r
  */
 public class Circle extends Shape {
     private final double radius;

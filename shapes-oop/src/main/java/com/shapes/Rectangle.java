@@ -2,6 +2,9 @@ package com.shapes;
 
 /**
  * Represents a rectangle defined by width or height.
+ * 
+ * Area formula: width * height
+ * Perimeter formula: 2 * (width + height)
  */
 public class Rectangle extends Shape {
     private final double width;
@@ -19,11 +22,13 @@ public class Rectangle extends Shape {
 
     @Override
     public double getArea() {
+        // Area = width * height
         return width * height;
     }
 
     @Override
     public double getPerimeter() {
+        // Perimeter = 2 * (width + height)
         return 2 * (width + height);
     }
 
